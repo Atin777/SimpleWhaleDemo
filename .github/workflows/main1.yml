@@ -23,6 +23,9 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+        
+        tags: ghcr.io/Atin777/simplewhale:latest
+        
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
